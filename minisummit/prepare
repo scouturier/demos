@@ -1,0 +1,13 @@
+#!/bin/bash
+
+clear
+
+echo "Preparing the host for running the demo ..."
+
+# Install demo-magic
+export demo_magic_dir=$(mktemp -d)
+git clone https://github.com/paxtonhare/demo-magic $demo_magic_dir 2> /dev/null
+
+echo
+echo "Host ready!"
+clear
